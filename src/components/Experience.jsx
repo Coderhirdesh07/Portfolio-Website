@@ -4,25 +4,16 @@ import {motion} from "framer-motion";
 function Experience() {
   const experiences = [
   {
-    role: "Frontend Developer",
-    company: "Tech Company",
-    duration: "Jan 2024 – Present",
+    role: "Full Stack Developer",
+    company: "Sicuaura Global Pvt Lmt",
+    duration: "Oct 2025 – Dec 2025",
     description: [
       "Built responsive and reusable UI components using React and Tailwind CSS.",
       "Improved website performance by optimizing components.",
       "Collaborated with cross-functional teams to deliver features.",
     ],
   },
-  {
-    role: "React Developer Intern",
-    company: "Startup / Internship",
-    duration: "Jun 2023 – Dec 2023",
-    description: [
-      "Developed real-world applications using React and REST APIs.",
-      "Converted Figma designs into responsive UI.",
-      "Improved code quality and fixed bugs.",
-    ],
-  },
+  
 ];
 const containerVariants = {
   hidden: { opacity: 0 },

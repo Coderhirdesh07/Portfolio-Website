@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Contact() {
   return (
@@ -8,12 +9,12 @@ function Contact() {
       I'm open to job opportunities and freelance work.
     </p>
 
-    <a
-      href="mailto:your@email.com"
+    <Link
+      to="hirdeshkeshwani2001@gmail.com"
       className="px-8 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-700"
     >
       Say Hello
-    </a>
+    </Link>
   </section>
   )
 }

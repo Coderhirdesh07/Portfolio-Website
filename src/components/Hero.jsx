@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
+const MotionLink  = motion(Link);
 function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center px-6 overflow-hidden">
       <div className="max-w-4xl text-center">
-        
-        {/* Animated Heading */}
+
         <motion.h1
           initial={{ opacity: 0, x: -80 }}
           animate={{ opacity: 1, x: 0 }}
@@ -36,23 +37,25 @@ function Hero() {
           transition={{ delay: 0.8, duration: 0.5 }}
           className="mt-10 flex justify-center gap-6"
         >
-          <motion.a
-            href="#projects"
+          
+          <MotionLink
+          to="/projects"
             whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
             className="px-8 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-700"
           >
             View Projects
-          </motion.a>
-
-          <motion.a
-            href="#contact"
+          </MotionLink>
+         
+          <MotionLink
+            to="/contact"
             whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
             className="px-8 py-3 border border-gray-700 rounded-lg hover:bg-gray-800"
           >
             Contact Me
-          </motion.a>
+          </MotionLink>
+         
         </motion.div>
 
         {/* Floating Background Glow */}
@@ -68,6 +71,7 @@ function Hero() {
             ease: "easeInOut",
           }}
         />
+        
       </div>
     </section>
   );
