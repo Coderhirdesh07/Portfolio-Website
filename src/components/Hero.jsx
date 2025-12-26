@@ -14,7 +14,7 @@ function Hero() {
         >
           Hi, I’m{" "}
           <span className="text-indigo-500">
-            Your Name
+            Hirdesh Keswani
           </span>
         </motion.h1>
 
